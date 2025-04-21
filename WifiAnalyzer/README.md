@@ -9,7 +9,8 @@ User-Friendly Design: Includes a progress bar, dark mode toggle, and threaded sc
 
 Installation
 
-Clone the repository:git clone https://github.com/yugdabgar21/wifi-risk-analyzer.git
+
+Clone the repository:  git clone https://github.com/yugdabgar21/wifi-risk-analyzer.git
 
 cd wifi-risk-analyzer
 
