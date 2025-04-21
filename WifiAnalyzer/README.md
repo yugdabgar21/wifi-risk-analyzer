@@ -10,14 +10,18 @@ User-Friendly Design: Includes a progress bar, dark mode toggle, and threaded sc
 Installation
 
 Clone the repository:git clone https://github.com/yugdabgar21/wifi-risk-analyzer.git
+
 cd wifi-risk-analyzer
+
 
 
 Install dependencies:pip install -r requirements.txt
 
 
+
 Ensure audio files (*.mp3) are in the project root.
-Run the application:python wifi_risk_analyser.py
+
+Run the application:  python wifi_risk_analyser.py
 
 
 
