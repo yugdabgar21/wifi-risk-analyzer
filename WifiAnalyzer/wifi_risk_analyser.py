@@ -1,12 +1,30 @@
+import importlib.util
+import subprocess
+import sys
 import socket
 import requests
-import subprocess
 import tkinter as tk
 from tkinter import ttk, messagebox
 from tkinter.scrolledtext import ScrolledText
 import threading
 import os
 import pygame
+
+# Function to check and install dependencies
+def install_dependencies():
+    required = ['pygame', 'requests']
+    for package in required:
+        if importlib.util.find_spec(package) is None:
+            print(f"Installing {package}...")
+            try:
+                subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+                print(f"{package} installed successfully.")
+            except subprocess.CalledProcessError:
+                print(f"Failed to install {package}. Please install it manually with 'pip install {package}'.")
+                sys.exit(1)
+
+# Run dependency check
+install_dependencies()
 
 # ========== Language Packs ==========
 LANGUAGES = {
