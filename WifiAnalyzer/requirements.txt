@@ -1,0 +1,2 @@
+echo "pygame>=2.5.2" > requirements.txt
+echo "requests>=2.31.0" >> requirements.txt
